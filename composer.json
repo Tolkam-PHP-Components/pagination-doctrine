@@ -1,0 +1,32 @@
+{
+    "name": "tolkam/pagination-doctrine",
+    "description": "Doctrine DBAL paginators for tolkam/pagination",
+    "type": "library",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Kanstantsin Kulesh",
+            "email": "kk@tolkam.com",
+            "homepage": "https://www.tolkam.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Tolkam\\Pagination\\Paginator\\": "src",
+            "Tolkam\\Pagination\\Tests\\": "tests"
+        }
+    },
+    "require": {
+        "php": ">=7.4",
+        "doctrine/dbal": "^3.1",
+        "tolkam/pagination": "^1.0"
+    },
+    "require-dev": {
+        "tolkam/dump": "^2.0",
+        "phpunit/phpunit": "^8.5",
+        "phpunit/php-code-coverage": "^7.0"
+    },
+    "scripts": {
+        "tests": "php vendor/bin/phpunit"
+    }
+}
